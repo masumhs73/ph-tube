@@ -4,17 +4,22 @@
 //     .then((data) => displayCategories(data.categories))
 // }
 
-// function displayCategories (categories) {
-//     // console.log(categories);
+// function displayCategories(categories) {
+//     // get the container
 //     const categoryContainer = document.getElementById('category-container');
-//     for(const cat of categories) {
+
+//     // Loop operation on Array of object
+//     for (const cat of categories) {
 //         // console.log(cat);
+//         // Create element
 //         const categoryDiv = document.createElement("div");
 //         categoryDiv.innerHTML = `
-//         <button class="btn btn-sm hover:bg-[#FF1F3D] hover:text-white">${cat.category}</button>
+//         <button onclick="loadCategoryVideos(${cat.category_id})" class="btn btn-sm hover:bg-[#FF1F3D] hover:text-white">${cat.category}</button>
 //         `
+//         // Append the element
 //         categoryContainer.appendChild(categoryDiv);
 //     }
+
 // }
 
 // loadCategories();
